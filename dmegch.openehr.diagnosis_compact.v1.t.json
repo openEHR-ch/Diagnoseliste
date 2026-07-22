@@ -22,9 +22,9 @@
       "original_namespace" : "ch.openehr",
       "original_publisher" : "openehr.ch",
       "custodian_namespace" : "ch.openehr",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "118cd297304400bd662b0786a7c998ef",
+      "MD5-CAM-1.0.1" : "f1009e33384beb910ffa6aaa7b2c421e",
       "PARENT:MD5-CAM-1.0.1" : "5D7128B10BA5AF84CC9C973D48833BE9"
     },
     "details" : {
@@ -4041,23 +4041,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "D02m",
                     "code" : "0",
-                    "value" : "Beidseitig"
+                    "value" : "Links und rechts"
                   }, {
                     "terminologyId" : "D02m",
                     "code" : "1",
-                    "value" : "Einseitig rechts"
+                    "value" : "Links"
                   }, {
                     "terminologyId" : "D02m",
                     "code" : "2",
-                    "value" : "Einseitig links"
-                  }, {
-                    "terminologyId" : "D02m",
-                    "code" : "3",
-                    "value" : "Einseitig unbekannt"
-                  }, {
-                    "terminologyId" : "D02m",
-                    "code" : "9",
-                    "value" : "Unbekannt"
+                    "value" : "Rechts"
                   } ]
                 } ]
               } ],
