@@ -22,9 +22,9 @@
       "original_namespace" : "ch.openehr",
       "original_publisher" : "openehr.ch",
       "custodian_namespace" : "ch.openehr",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "76b08f28b17b8523d92a9236f5f81335",
+      "MD5-CAM-1.0.1" : "253a063c16ba01f8eb4eeebe51a3e84f",
       "PARENT:MD5-CAM-1.0.1" : "5D7128B10BA5AF84CC9C973D48833BE9"
     },
     "details" : {
@@ -272,17 +272,7 @@
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
                 "nodeId" : "at0005.1",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "DV_CODED_TEXT",
-                    "occurrences" : "1..1",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               }, {
                 "@type" : "C_ARCHETYPE_ROOT",
@@ -782,21 +772,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0079.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0079.3",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0079.2",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -919,15 +896,6 @@
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_qualifier-001.v2",
               "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0046.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-diagnostic_process_context_ch-001.v0",
-              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -971,20 +939,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante (2)",
-            "description" : "Variante o subtipo específico del Diagnóstico, si procede.",
-            "comment" : "Por ejemplo: \"neuropatía axonal motora aguda\" como variante del síndrome de Guillain-Barré. Siempre que sea posible, es preferible codificar el nombre de la variante con una terminología."
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante (3)",
-            "description" : "Variante o subtipo específico del Diagnóstico, si procede.",
-            "comment" : "Por ejemplo: \"neuropatía axonal motora aguda\" como variante del síndrome de Guillain-Barré. Siempre que sea posible, es preferible codificar el nombre de la variante con una terminología."
           }
         },
         "es-ar" : {
@@ -999,20 +953,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "de" : {
@@ -1027,20 +967,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante (2)",
-            "description" : "Spezifische Variante oder Subtyp der Diagnose, falls relevant.",
-            "comment" : "Zum Beispiel: „Akute motorische axonale Neuropathie“ als Variante des Guillain-Barre-Syndroms. Wo möglich, ist die Kodierung des Namens der Variante über eine Terminologie zu bevorzugen."
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante (3)",
-            "description" : "Spezifische Variante oder Subtyp der Diagnose, falls relevant.",
-            "comment" : "Zum Beispiel: „Akute motorische axonale Neuropathie“ als Variante des Guillain-Barre-Syndroms. Wo möglich, ist die Kodierung des Namens der Variante über eine Terminologie zu bevorzugen."
           }
         },
         "en" : {
@@ -1055,20 +981,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079.2",
-            "text" : "SNOMED",
-            "description" : "Specific variant or subtype of the Diagnosis, if relevant.",
-            "comment" : "For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. "
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079.3",
-            "text" : "ICD-10",
-            "description" : "Specific variant or subtype of the Diagnosis, if relevant.",
-            "comment" : "For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. "
           }
         },
         "ar-sy" : {
@@ -1083,20 +995,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "pt-br" : {
@@ -1111,20 +1009,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "nb" : {
@@ -1139,20 +1023,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant (2)",
-            "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
-            "comment" : "For eksempel \"akutt motorisk aksonal nevropati\" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig."
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant (3)",
-            "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
-            "comment" : "For eksempel \"akutt motorisk aksonal nevropati\" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig."
           }
         },
         "sv" : {
@@ -1167,20 +1037,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Specificering (2)",
-            "description" : "Specificering av diagnosen, där det är relevant.",
-            "comment" : "Exempelvis \"akut motorisk axonal neuropati\" som en specificering av Guillain-Barre-syndromet. Om möjligt, koda specificeringen med en terminologi."
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Specificering (3)",
-            "description" : "Specificering av diagnosen, där det är relevant.",
-            "comment" : "Exempelvis \"akut motorisk axonal neuropati\" som en specificering av Guillain-Barre-syndromet. Om möjligt, koda specificeringen med en terminologi."
           }
         },
         "ko" : {
@@ -1195,20 +1051,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "fi" : {
@@ -1223,20 +1065,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "it" : {
@@ -1251,20 +1079,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "nl" : {
@@ -1279,20 +1093,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "zh" : {
@@ -1307,20 +1107,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (2)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en) (3)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "ca" : {
@@ -1335,20 +1121,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant (2)",
-            "description" : "Variant o subtipus específic del Diagnòstic, si escau.",
-            "comment" : "Per exemple: «neuropatia axonal motora aguda», com a variant de la síndrome de Guillain-Barré. Es recomana programar el nom de la variant amb una terminologia sempre que sigui possible."
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant (3)",
-            "description" : "Variant o subtipus específic del Diagnòstic, si escau.",
-            "comment" : "Per exemple: «neuropatia axonal motora aguda», com a variant de la síndrome de Guillain-Barré. Es recomana programar el nom de la variant amb una terminologia sempre que sigui possible."
           }
         },
         "zh-cn" : {
@@ -1363,20 +1135,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
-          },
-          "at0079.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "变体/亚型 (2)",
-            "description" : "当前诊断的特定变体/变异类型或亚型/子类型（如果相关/合适）。",
-            "comment" : "例如：“急性运动轴突性神经病”（acute motor axonal neuropathy）就属于是吉兰-巴雷综合征（Guillain-Barre Syndrome）的变体。尽可能首选采用术语标准对变体/亚型的名称进行编码。"
-          },
-          "at0079.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "变体/亚型 (3)",
-            "description" : "当前诊断的特定变体/变异类型或亚型/子类型（如果相关/合适）。",
-            "comment" : "例如：“急性运动轴突性神经病”（acute motor axonal neuropathy）就属于是吉兰-巴雷综合征（Guillain-Barre Syndrome）的变体。尽可能首选采用术语标准对变体/亚型的名称进行编码。"
           }
         },
         "fr" : {
@@ -2102,6 +1860,22 @@
           "keywords" : [ "problema", "activo", "inactivo", "estado", "episodio", "diagnóstico" ],
           "use" : "Utilícese para registrar un calificador pertinente específico del contexto o del momento que proporcione detalles adicionales que sean pertinentes en el momento del registro o dentro del contexto clínico en el que se registra un problema o diagnóstico. El calificador puede no ser apropiado en otro momento o en otro contexto clínico.\r\n\r\nEste arquetipo está diseñado para incluirse en Status SLOT en el arquetipo EVALUATION.problem_diagnosis. La intención es que el arquetipo EVALUATION.problem_diagnosis contenga toda la información que se aplica en todos los contextos, a diferencia de este arquetipo, que sólo describe la información que depende del contexto de uso.\r\n\r\nNOTAS IMPORTANTES PARA LA APLICACIÓN:\r\n- No está previsto ni implícito que alguno o todos estos calificadores deban utilizarse dentro del mismo contexto o periodo de tiempo. En contraste con el diseño habitual de los arquetipos, este arquetipo se ha diseñado deliberadamente para recopilar una serie de calificadores comunes en un solo lugar, en un esfuerzo por intentar una normalización sencilla dentro de un área muy desordenada de la práctica clínica. Se reconoce que los elementos de datos contenidos en este arquetipo abarcan muchos conceptos diferentes, y a veces incluso opuestos. Esto se ha hecho principalmente para evitar la necesidad de múltiples arquetipos de calificadores, cada uno de los cuales contiene sólo uno o dos elementos de datos.\r\n- Algunos de estos elementos de datos pueden entrar en conflicto directo si se utilizan simultáneamente en el mismo contexto; por ejemplo, no tendría sentido tener un problema «inactivo» junto con un episodio «en curso». Como tales, estos calificadores de estado deben utilizarse con extremo cuidado, ya que se aplican de forma variable en la práctica y la interoperabilidad no puede garantizarse a menos que las directrices de uso estén claramente definidas dentro de la comunidad clínica en la que el par de arquetipos «Problema/Diagnóstico» y «Calificador Problema/Diagnóstico» puede ser compartido. \r\n\r\nLa codificación DRG completa requerirá los elementos de datos relacionados con DRG de este arquetipo en combinación con elementos de datos de otros arquetipos.",
           "misuse" : "No debe utilizarse para representar un diagnóstico diferencial - utilice el arquetipo EVALUATION.differential_diagnosis para este fin.\r\n\r\nNo debe utilizarse para representar la certeza diagnóstica - utilice el elemento de datos \"Certeza diagnóstica\" dentro del arquetipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer un qualificatif spécifique au contexte clinique ou à un moment donné pour un problème ou un diagnostic donné.",
+          "keywords" : [ "problème", "actif", "inactif", "statut", "épisode", "diagnostic" ],
+          "use" : "À utiliser pour enregistrer un qualificatif pertinent, spécifique au contexte ou à un moment donné, qui fournit des détails supplémentaires pertinents au moment de l’enregistrement ou dans le contexte clinique où un problème ou un diagnostic est enregistré. Le qualificatif peut ne pas être approprié à un autre moment ou dans un autre contexte clinique. \n\nCet archétype est conçu pour être inclus dans le slot « Status » de l’archétype EVALUATION.problem_diagnosis. L’objectif est que l’archétype EVALUATION.problem_diagnosis contienne toutes les informations applicables dans tous les contextes, contrairement à cet archétype qui ne décrit que les informations dépendant du contexte d’utilisation.\n\nREMARQUES IMPORTANTES POUR LA MISE EN ŒUVRE : \n- Il n’est ni prévu ni sous-entendu que tout ou partie de ces qualificatifs doivent être utilisés dans le même contexte ou au cours de la même période. Contrairement à la conception habituelle des archétypes, celui-ci a été délibérément conçu pour regrouper un certain nombre de qualificatifs courants en un seul endroit, dans le but de tenter une standardisation simple au sein d’un domaine très hétérogène de la pratique clinique. Il est reconnu que les éléments de données contenus dans cet archétype englobent de nombreux concepts différents, voire parfois contradictoires. Cette approche a été adoptée principalement pour éviter la création de multiples archétypes de qualificatifs, chacun ne contenant qu’un ou deux éléments de données. \n- Certains de ces éléments de données sont susceptibles d’être en conflit direct s’ils sont utilisés simultanément dans un même contexte ; par exemple, il ne serait pas logique d’avoir un problème « inactif » associé à un épisode « en cours ». De ce fait, ces qualificatifs d’état doivent être utilisés avec une extrême prudence, car leur application varie dans la pratique et l’interopérabilité ne peut être garantie à moins que des directives d’utilisation ne soient clairement définies au sein de la communauté clinique dans laquelle la paire d’archétypes « Problème/Diagnostic » et « Qualificatif de problème/diagnostic » est susceptible d’être partagée. \n\nUn codage DRG complet nécessitera les éléments de données liés aux DRG issus de cet archétype, en combinaison avec des éléments de données provenant d’autres archétypes.",
+          "misuse" : "À ne pas utiliser pour enregister un diagnostic différentiel – utiliser l'archétype EVALUATION.differential_diagnosis à cette fin.\n\nÀ ne pas utiliser pour enregister la certitude diagnostique – utiliser l'élément de données « Certitude diagnostique » au sein de l'archétype EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3368,6 +3142,74 @@
             "code" : "ac0.33",
             "description" : ""
           }
+        },
+        "fr" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
+          },
+          "ac0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.23",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.25",
+            "description" : ""
+          },
+          "ac0.28" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.28",
+            "description" : ""
+          },
+          "ac0.33" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.33",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -3708,6 +3550,20 @@
         "name" : "Clara Calleja Vega",
         "organisation" : "CatSalut. Servei Català de la Salut.",
         "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
       },
       "otherDetails" : { }
     } ]
@@ -4069,23 +3925,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "D02m"
+                    "value" : "local"
                   },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "D02m" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "D02m",
-                    "code" : "0",
-                    "value" : "Links und rechts"
-                  }, {
-                    "terminologyId" : "D02m",
-                    "code" : "1",
-                    "value" : "Links"
-                  }, {
-                    "terminologyId" : "D02m",
-                    "code" : "2",
-                    "value" : "Rechts"
-                  } ]
+                  "constraint" : [ "ac0.8" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -4187,6 +4030,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "sl" : {
@@ -4200,6 +4049,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -4215,6 +4070,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "nb" : {
@@ -4228,6 +4089,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -4243,6 +4110,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "de" : {
@@ -4256,6 +4129,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -4271,6 +4150,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "sv" : {
@@ -4284,6 +4169,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -4299,6 +4190,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "ca" : {
@@ -4313,6 +4210,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "es" : {
@@ -4326,6 +4229,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         }
@@ -4359,6 +4268,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0004", "at0003", "at0083" ]
         }
       }
     },
@@ -4512,94 +4426,6 @@
         "organisation" : "CatSalut. Servei Català de la Salut.",
         "email" : "ccalleja@catsalut.cat"
       },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "313008e2-f168-47e3-aefd-894f0f74cc65",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4c44d2a390755ac05a0fb5560668b710"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.diagnostic_process_context_ch.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-diagnostic_process_context_ch-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "de" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9ce6fd3f-047d-3849-82cf-60ca68a7cab4",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
