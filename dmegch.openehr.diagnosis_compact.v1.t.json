@@ -22,9 +22,9 @@
       "original_namespace" : "ch.openehr",
       "original_publisher" : "openehr.ch",
       "custodian_namespace" : "ch.openehr",
-      "sem_ver" : "4.1.0",
+      "sem_ver" : "4.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8621765bc8c15e694d92490c93d01512",
+      "MD5-CAM-1.0.1" : "abb2b4018f18ce37e363453c7086128b",
       "PARENT:MD5-CAM-1.0.1" : "5D7128B10BA5AF84CC9C973D48833BE9"
     },
     "details" : {
@@ -886,15 +886,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0043.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-multiple_coding_icd10gm-001.v1",
               "referenceType" : "archetypeOverlay"
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
@@ -3602,103 +3593,6 @@
         "name" : "Jonas Bucher",
         "organisation" : "Cistec AG",
         "email" : "jonas.bucher@cistec.com"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "dea5aaba-ee7d-47e4-9a29-94ba534ba3e3",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C5D8EBC78308C8803FE9363B3F191CA7"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung mehrerer Kodierungsmarker für ICD-10-GM-Kodes nach dem Kreuz-Stern-System bzw. für die genauere Spezifikation von Codes für ein bestimmtes gesundheitliches Problem oder eine bestimmte Diagnose.",
-          "keywords" : [ "Mehrfachkodierung, Ätiologie, Manifestation, Kreuz-Stern-System, ICD-10, Genauere Spezifikation, Ausrufezeichen, Mehrfachkodierungskennzeichen, Diagnose, Klassifikation, Kodierung, Verschlüsselung" ],
-          "use" : "Verwenden Sie diesen Archetyp, um mehrere Kodierungsmarker für Diagnosen in ICD-10-GM Terminologie darzustellen.\r\n\r\nDieser Cluster-Archetyp ist dafür vorgesehen, in Archetypen der Familie Problem/Diagnose im Slot für die die zusätzliche Details aufgenommen zu werden.",
-          "misuse" : "Darf nicht zur Darstellung von Mehrfachkodierungskennzeichen für andere Terminologien als ICD-10-GM verwendet werden.",
-          "copyright" : "© HiGHmed",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To represent multiple coding markers for ICD-10-GM codes using the Cross-Star system for a specific health problem or diagnosis.",
-          "keywords" : [ "Multiple coding, Double coding, Aetiology, Manifestation, Cross-Star system, Coding, ICD-10, Multiple coding identifiers, Diagnosis, Classification." ],
-          "use" : "Use this archetype to represent multiple coding markers for diagnoses in ICD-10-GM terminology.\r\n\r\nThis cluster archetype is intended to be included in archetypes of the Problem/Diagnosis family in the additional details slot.",
-          "misuse" : "May not be used to represent multiple coding codes for terminologies other than ICD-10-GM.",
-          "copyright" : "© HiGHmed",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.multiple_coding_icd10gm.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-multiple_coding_icd10gm-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "de" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "6a432256-0bd1-40c8-868c-df5a2ac0ef40",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "????"
       },
       "otherDetails" : { }
     } ]
