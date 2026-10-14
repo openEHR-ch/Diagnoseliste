@@ -22,9 +22,9 @@
       "original_namespace" : "ch.openehr",
       "original_publisher" : "openehr.ch",
       "custodian_namespace" : "ch.openehr",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "7.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "362c48942b34adf527db477b0492ecc7",
+      "MD5-CAM-1.0.1" : "b7d4aa7ecdc32d818134476c1cbeee3e",
       "PARENT:MD5-CAM-1.0.1" : "5D7128B10BA5AF84CC9C973D48833BE9"
     },
     "details" : {
@@ -286,7 +286,7 @@
               }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..1",
+                "occurrences" : "0..0",
                 "nodeId" : "at0006.3",
                 "attributes" : [ ],
                 "attributeTuples" : [ ],
