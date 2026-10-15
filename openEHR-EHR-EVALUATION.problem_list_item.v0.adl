@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2c0ecfb1d0793d453c6011975a7612ef">
+		["MD5-CAM-1.0.1"] = <"f374b2b9ce4badb51c84d84f72033011">
 		["build_uid"] = <"c64695b8-7d59-3450-8524-d79cdcdf2567">
 	>
 
@@ -35,7 +35,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- EHR URI of diagnosis
+					ELEMENT[at0002] matches {    -- EHR URI of diagnosis
 						value matches {
 							DV_EHR_URI matches {*}
 						}
