@@ -1,0 +1,125 @@
+archetype (adl_version=1.4; uid=c415b57d-a02c-4460-bed6-5b6396ed085c)
+	openEHR-EHR-EVALUATION.problem_list_item.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2026-10-15">
+		["name"] = <"Jonas Bucher">
+		["email"] = <"jonas.bucher@cistec.com">
+		["organisation"] = <"Cistec AG">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"88b4ccc43cd5fb4e5bce012c718e9a07">
+		["build_uid"] = <"c64695b8-7d59-3450-8524-d79cdcdf2567">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Problem list item
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- EHR URI of diagnosis
+						value matches {
+							DV_EHR_URI matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Status
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v2/}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Rank
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>=1|}
+							}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Priority
+						value matches {
+							1|[local::at0008],
+							2|[local::at0009],
+							3|[local::at0010]
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Problem list item">
+					description = <"Problem list item">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"EHR URI of diagnosis">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Status">
+					description = <"Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.">
+					comment = <"Meant for context-specific openEHR-EHR-CLUSTER.problem_qualifier.v2.">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Rank">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Priority">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"High">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Medium">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Low">
+					description = <"">
+				>
+			>
+		>
+	>
