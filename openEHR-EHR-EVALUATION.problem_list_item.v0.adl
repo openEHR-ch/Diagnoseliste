@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"88b4ccc43cd5fb4e5bce012c718e9a07">
+		["MD5-CAM-1.0.1"] = <"2c0ecfb1d0793d453c6011975a7612ef">
 		["build_uid"] = <"c64695b8-7d59-3450-8524-d79cdcdf2567">
 	>
 
@@ -38,15 +38,6 @@ definition
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- EHR URI of diagnosis
 						value matches {
 							DV_EHR_URI matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Status
-						include
-							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v2/}
-					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Comment
-						value matches {
-							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Rank
@@ -61,6 +52,15 @@ definition
 							1|[local::at0008],
 							2|[local::at0009],
 							3|[local::at0010]
+						}
+					}
+					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Status
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v2/}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
